@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Beats | Headphones of future</title>
 </head>
-<body>
-    <h1>Hey there this is landing page</h1>
+<body id="home">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Beats</h1>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- showcase -->
+    <section class="section-a">
+        <div class="container">
+            <div>
+                <h1>The Headphone of the future</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde mollitia nisi eveniet sapiente, dolor sed eos iure expedita magni aspernatur ipsa nobis inventore ducimus amet illum beatae placeat sint perferendis praesentium vero. Velit laborum, dolor aliquid fugiat sed adipisci.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <img src="img/showcase.jpg" alt="headphones">
+        </div>
+    </section>
+
+    <!-- Overlay text -->
+    <section class="section-b">
+        <div class="overlay">
+            <div class="section-b-inner" id="about">
+                <h3>Loud & Clear</h3>
+                <h2>People aren't Hearing All the Music</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, adipisci numquam illo unde error a aliquam natus tempore necessitatibus quia!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- galllery -->
+    <section class="section-c">
+        <div class="gallery">
+            <a href="img/gal2323.jpg" class="big"><img src="img/gal2323.jpg" alt=""></a>
+            <a href="img/gal39834.jpg" class="big"><img src="img/gal39834.jpg" alt=""></a>
+            <a href="img/gal43884.jpg" class="big"><img src="img/gal43884.jpg" alt=""></a>
+            <a href="img/gal4545.jpg" class="big"><img src="img/gal4545.jpg" alt=""></a>
+            <a href="img/gal4958.jpg" class="big"><img src="img/gal4958.jpg" alt=""></a>
+            <a href="img/gal74744.jpg" class="big"><img src="img/gal74744.jpg" alt=""></a>
+        </div>
+    </section>
+
+    <footer class="section-footer">
+        <div class="container">
+            <div>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <a href="https://twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+            <div>
+                <h3>Company Info</h3>
+                <ul>
+                    <li><a href="#">All products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Blog Posts</h3>
+                <ul>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <form name="email-form" method="POST" data-netliy="true">
+                    <div class="email-form">
+                        <span class="form-control-wrap">
+                            <input type="email" name="email" size="40" id="email" class="form-control" placeholder="email">
+                            <button type="submit" class="form-control submit">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/95beb39198.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script/simple-lightbox.jquery.min.js"></script>
+    <script>
+        $(function(){
+            const $gallery = $('.gallery a').simpleLightbox();
+        })
+    </script>
 </body>
 </html>
